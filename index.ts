@@ -40,7 +40,8 @@ let addTask = async () => {
         }
     ]);
     todoList.push(newTask.task);
-    console.log(chalk.italic.green.underline(`\n ${newTask.task} Task Added Successfully In Todo-List\n`));
+    console.log(chalk.italic.green.underline
+        (`\n ${newTask.task} Task Added Successfully In Todo-List\n`));
 }
 // Function to view all Todo-List Tasks
 let viewTask = () => {
@@ -59,7 +60,8 @@ let deleteTask = async () => {
         }
     ]);
     let deleteTask = todoList.splice(taskIndex.index - 1, 1);
-    console.log(chalk.italic.green.underline(`\n ${deleteTask} This task has been deleted successfully from your Todo-List.\n`));
+    console.log(chalk.italic.green.underline
+        (`\n ${deleteTask} This task has been deleted successfully from your Todo-List.\n`));
 }
 // Function to update a task
 let updateTask = async () => {
